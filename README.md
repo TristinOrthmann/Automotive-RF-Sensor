@@ -1,65 +1,84 @@
-# Automotive-RF-Sensor
-Building and designing radar detection system for automotive vehicles. Outlined below are the goals, constraints, and pathways of this project.
+# Automotive RF Sensor
 
-Goal: Build a compact automotive RF sensing system capable of detecting and classifying microwave radar emissions.
+An experimental automotive RF sensing system designed to detect and characterize microwave radar emissions using software-defined radio (SDR), digital signal processing, and embedded hardware.
 
-Phase 1
+## Project Overview
 
-Target outputs:
+The goal of this project is to design, build, and experimentally characterize a compact RF sensing system capable of detecting candidate radar signals in an automotive environment.
 
-Detected/not detected
-Approximate frequency
-Signal strength
-Confidence level
-Alert through display/buzzer
-Logged measurements for later analysis
+The project combines:
 
+* Radio-frequency sensing
+* Software-defined radio (SDR)
+* Digital signal processing
+* Signal classification
+* Embedded systems
+* Mechanical design
+* CAD and prototyping
+* Thermal and vibration considerations
 
-Engineering constraints:
+## System Concept
 
-<$300 prototype
-Fits inside a car
-12-V automotive power
-Real-time processing
-Custom-designed enclosure
-Semester completion
+RF Environment
+      ↓
+    Antenna
+      ↓
+  RF Front End
+      ↓
+      SDR
+      ↓
+  IQ Samples
+      ↓
+Signal Processing
+      ↓
+Signal Detection
+      ↓
+Classification
+      ↓
+Driver Alert
 
+## Project Goals
 
-Phase 2
+* [ ] Define system requirements
+* [ ] Select RF hardware
+* [ ] Acquire and visualize RF signals
+* [ ] Develop signal-processing pipeline
+* [ ] Implement signal detection
+* [ ] Develop basic signal classification
+* [ ] Design automotive enclosure
+* [ ] Evaluate thermal performance
+* [ ] Evaluate mechanical robustness
+* [ ] Test system performance experimentally
+* [ ] Document results
 
-Learn RF Design
+## Engineering Metrics
 
-Observe RF signals with RTL-SDR or other sensing equipment with spectrum analysis
+The system will eventually be evaluated using measurable performance criteria including:
 
-Write code to extract variables
+* Detection range
+* Detection latency
+* False-positive rate
+* Signal-to-noise ratio
+* Frequency estimation accuracy
+* Power consumption
+* Operating temperature
+* Mechanical robustness
 
-frequency
-signal power
-bandwidth
-duration
-peak frequency
+## Current Status
 
+**Phase 0 — Project Definition**
 
-Phase 3
+Currently developing the system architecture, requirements, and experimental plan.
 
-Build detector algorithm
+## Repository Structure
 
-Signal detected
-Frequency: X GHz
-Bandwidth: XX MHz
-SNR: XX dB
-Duration: XX ms
-Classification: Candidate radar
-Confidence: XX%
+docs/                 Project documentation
+hardware/             Electronics and hardware
+software/             Signal-processing software
+cad/                  Mechanical design
+data/                 Experimental data
+tests/                Experimental validation
 
-Phase 4
+## Disclaimer
 
-Design automotive package:
-
-enclosure
-PCB mounts
-antenna mounts
-windshield/dashboard mount
-heat-management features
-cable routing
-vibration isolation
+This is an educational engineering project focused on RF sensing, signal processing, and automotive instrumentation. Testing will be conducted in compliance with applicable laws and regulations.
