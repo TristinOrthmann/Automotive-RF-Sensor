@@ -1,0 +1,76 @@
+# System Requirements
+
+## Project Objective
+
+Design and prototype a compact automotive RF sensing system capable of detecting and characterizing radar emissions in a vehicle environment.
+
+The system will use software-defined radio (SDR), signal processing, and custom hardware to identify candidate radar signals and provide an alert to the user.
+
+## Primary Requirements
+
+### RF Sensing
+
+* Detect RF signals within the selected operating frequency range.
+* Measure signal frequency and relative signal strength.
+* Distinguish candidate radar signals from background RF noise.
+* Operate in real time or near-real time.
+
+### Signal Processing
+
+* Acquire IQ data from an SDR.
+* Generate frequency-domain representations using FFTs.
+* Estimate the local noise floor.
+* Detect signals exceeding defined thresholds.
+* Extract measurable signal characteristics.
+* Develop a basic signal classification method.
+
+### User Interface
+
+* Display detected signal information.
+* Provide an audible or visual alert when a candidate signal is detected.
+* Display system status and relevant measurements.
+
+### Mechanical
+
+* Design a compact enclosure using CAD.
+* Provide secure mounting for the electronics.
+* Consider vibration and temperature encountered in an automotive environment.
+* Provide appropriate ventilation or thermal management if required.
+
+### Electrical
+
+* Operate from an automotive 12 V power source or suitable portable power supply.
+* Protect electronics from inappropriate input voltage.
+* Minimize system power consumption where practical.
+
+## Performance Metrics
+
+The prototype will be experimentally evaluated using:
+
+* Detection sensitivity
+* Detection range
+* False-positive rate
+* Detection latency
+* Frequency estimation accuracy
+* Signal-to-noise ratio
+* Power consumption
+* Operating temperature
+
+## Project Constraints
+
+* Semester-scale development timeline
+* Student/research prototype rather than commercial product
+* Reasonable component cost
+* Testing conducted in compliance with applicable laws and regulations
+
+## Stretch Goals
+
+The following features will only be attempted after the core system is functional:
+
+* Direction-of-arrival estimation
+* Multiple-antenna sensing
+* Improved signal classification
+* Custom PCB
+* Custom automotive enclosure
+* Environmental/vibration testing
+* On-device processing without a laptop
